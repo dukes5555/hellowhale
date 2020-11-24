@@ -6,7 +6,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/dukes5555/eks-workshop-sample-api-service-go.git', branch:'master'
+        git url:'https://github.com/dukes5555/hellowhale.git', branch:'master'
       }
     }
 
