@@ -33,7 +33,7 @@ pipeline {
       stage('Deploy k8s') {
         steps {
           withKubeConfig([credentialsId: 'jenkins_kconfig', serverUrl: 'https://A1216214A6E9FECA7124B1BAC5472DD6.yl4.us-east-1.eks.amazonaws.com']) {
-          sh '/usr/local/bin/kubectl apply -f hellowhale.yml -n devteam1'
+          sh '/usr/local/bin/kubectl apply -f hellowhale.yml -n devteam3'
           }
         }
       }
